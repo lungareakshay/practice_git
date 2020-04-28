@@ -1,0 +1,38 @@
+- git commit = commit a changeset
+- git branch NewImage = Brach a parent
+- git checkout NewImage = make it as the current master
+- git merge = merge two or more branch
+- git rebase master = rebasing used to merge, it has advantage of linear clean history logs
+- git checkout C4 = changing head
+- git log = git all hashes
+- git checkout master^ = checkout parent of master, ^ this is used for moving upward by one and ~num is used to move upward by num
+- git checkout C4, git checkout HEAD^ this is better
+- git reset HEAD~1 = only for local machine
+- git revert HEAD = for all other users
+- git cherry-pick C1 C2 = this will copy C1 and C2 below the head
+- git rebase HEAD~4 -i = interactive option for four commit above the head, user can pick off or on to include the changes 
+- git tag v1 C1 - create tag v1 at C1 commit - this is like anchor points used for milestones spotification
+- git describe C1 - it will give distance of C1 to tag above it - output will look like V0_1_gC1 - V0 tag and C1 will have distance of 1.
+-
+
+
+git version
+pwd
+mkdir project
+git config --global user.name "Akshay"
+git config --global user.email "lungareakshay@gmail.com"
+git config --global --list 
+clone/downlaod in github
+copy url 
+git clone https://github.com/lungareakshay/learning-git.git
+git status
+create file
+git status 
+git add start.txt
+git commit -m "Adding start text file"
+git push origin master 
+git init fresh-project  
+git diff start.txt
+git checkout
+q to exit from diff screen
+esc to go out from insert mode and then type :x to get out of comment window 
